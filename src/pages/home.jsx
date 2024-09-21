@@ -33,7 +33,7 @@ const HomePage = () => {
         alignItems: "center",
         justifyContent: "center",
         textAlign: "center",
-        rowGap: "2rem",
+        rowGap: "1rem",
         minHeight: "100vh", // Ensure it covers the full height of the viewport
       }}
     >
