@@ -17,7 +17,7 @@ function App() {
         {" "}
         <ScrollToTop /> Ensure this is placed here
         <Header />
-        <div style={{ marginTop: "70px" }}>
+        <div style={{ marginTop: "70px", backgroundColor: "white" }}>
           <Routes>
             <Route path="/synernova" element={<Home />} />
             <Route path="/synernova/about" element={<About />} />
