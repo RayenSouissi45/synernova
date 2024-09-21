@@ -153,26 +153,6 @@ const Services = () => {
         background: `linear-gradient(to bottom, white, #ECF9FF)`,
       }}
     >
-      <Button
-        variant="contained"
-        color="primary"
-        sx={{
-          backgroundColor: "#2196f3",
-          "&:hover": {
-            backgroundColor: "#1976d2",
-          },
-          boxShadow: "0 4px 20px rgba(0, 0, 0, 0.1)",
-          borderRadius: "20px",
-          padding: "10px 30px",
-          fontSize: "16px",
-          fontWeight: "bold",
-          textTransform: "none",
-        }}
-        endIcon={<ArrowForwardIcon />}
-        onClick={() => scrollToService(seoRef)}
-      >
-        Scroll!
-      </Button>
       <Box
         sx={{
           textAlign: "center",
