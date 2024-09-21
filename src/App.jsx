@@ -19,8 +19,8 @@ function App() {
         <Header />
         <div style={{ marginTop: "70px" }}>
           <Routes>
-            <Route path="/secondtest" element={<Home />} />
-            <Route path="/secondtest/about" element={<About />} />
+            <Route path="/synernova" element={<Home />} />
+            <Route path="/synernova/about" element={<About />} />
             <Route path="/secondtest/services" element={<Services />} />
           </Routes>
         </div>
