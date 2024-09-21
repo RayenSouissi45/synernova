@@ -16,7 +16,7 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import i18n from "../translation/i18n";
 import { styled } from "@mui/system";
 import { ScrollContext } from "../context/ScrollContext";
@@ -128,12 +128,14 @@ const Header = () => {
       onKeyDown={toggleDrawer(false)} // Only on keydown, not click
     >
       <DrawerHeader>
-        <Box
-          component="img"
-          src={synernovaLogoWeb}
-          alt="Synernova Logo"
-          sx={{ height: "80px", mr: 2 }} // Same logo size for mobile view
-        />
+        <Link to="/synernova">
+          <Box
+            component="img"
+            src={synernovaLogoWeb}
+            alt="Synernova Logo"
+            sx={{ height: "60px", mr: 2 }} // Increased the height for a bigger logo
+          />
+        </Link>
         <IconButton onClick={toggleDrawer(false)} sx={{ color: "#ffffff" }}>
           <CloseIcon />
         </IconButton>
@@ -228,12 +230,14 @@ const Header = () => {
       }}
     >
       <Toolbar>
-        <Box
-          component="img"
-          src={synernovaLogoWeb}
-          alt="Synernova Logo"
-          sx={{ height: "60px", mr: 2 }} // Increased the height for a bigger logo
-        />
+        <Link to="/synernova">
+          <Box
+            component="img"
+            src={synernovaLogoWeb}
+            alt="Synernova Logo"
+            sx={{ height: "60px", mr: 2 }} // Increased the height for a bigger logo
+          />
+        </Link>
 
         <Typography
           variant="h6"
