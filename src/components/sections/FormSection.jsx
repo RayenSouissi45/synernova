@@ -122,6 +122,7 @@ const FormSection = () => {
                 marginBottom: "1.5rem",
                 textAlign: "left",
                 fontWeight: "bold",
+                color: "#213547",
               }}
             >
               {t("formSection.title")}
@@ -132,6 +133,7 @@ const FormSection = () => {
                 marginBottom: "2.5rem",
                 textAlign: "left",
                 lineHeight: 1.6,
+                color: "#213547",
               }}
             >
               {t("formSection.subtitle")}
