@@ -20,7 +20,7 @@ const AboutUsSection = () => {
         position: "relative",
         overflow: "hidden",
         backgroundColor: "#FFFFF",
-        marginTop: "1.2rem",
+        marginTop: "1rem",
       }}
     >
       {/* Background Icons */}
