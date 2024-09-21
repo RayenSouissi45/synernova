@@ -65,7 +65,7 @@ const HeroSection = ({ scrollToForm }) => {
           alignItems: "center",
           textAlign: "center",
           padding: { xs: "0", sm: "0 1rem", md: "0 2rem" },
-          rowGap: "1rem",
+          rowGap: "0.6rem",
         }}
       >
         <Typography
@@ -86,7 +86,7 @@ const HeroSection = ({ scrollToForm }) => {
             maxWidth: "80%",
           }}
         >
-          {t("heroSection.title")} z
+          {t("heroSection.title")}
           <span style={{ color: blueTextColor }}>
             {t("heroSection.highlight")}
           </span>
