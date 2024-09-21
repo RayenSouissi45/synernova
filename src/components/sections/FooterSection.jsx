@@ -72,13 +72,13 @@ const FooterSection = () => {
                   isSmallScreen || isMediumScreen ? "center" : "flex-start",
               }}
             >
-              <a href="/" style={linkStyle}>
+              <a href="/synernova" style={linkStyle}>
                 {t("navbar.home")}
               </a>
-              <a href="/about" style={linkStyle}>
+              <a href="/synernova/about" style={linkStyle}>
                 {t("navbar.aboutUs")}
               </a>
-              <a href="/services" style={linkStyle}>
+              <a href="/synernova/services" style={linkStyle}>
                 {t("navbar.ourServices")}
               </a>
             </Box>
