@@ -178,9 +178,9 @@ const Services = () => {
         >
           {t("servicesIntro.exploreServices")}
         </Typography>
-        <Typography variant="body1" component="p" sx={{ color: "#666" }}>
+        {/* <Typography variant="body1" component="p" sx={{ color: "#666" }}>
           {t("servicesIntro.dedicatedTeam")}
-        </Typography>
+        </Typography> */}
       </Box>
       {services.map((service, index) => (
         <div key={index} ref={service.ref}>
