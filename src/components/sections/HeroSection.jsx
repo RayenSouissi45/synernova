@@ -86,7 +86,7 @@ const HeroSection = ({ scrollToForm }) => {
             maxWidth: "80%",
           }}
         >
-          {t("heroSection.title")}
+          {t("heroSection.title")}{" "}
           <span style={{ color: blueTextColor }}>
             {t("heroSection.highlight")}
           </span>
