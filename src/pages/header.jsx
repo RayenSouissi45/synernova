@@ -250,6 +250,7 @@ const Header = () => {
             style={({ isActive }) => ({
               color: isActive ? "#0077E6" : "#003873", // Change color when active
             })}
+            end
           >
             {t("navbar.home")}
           </StyledButton>
