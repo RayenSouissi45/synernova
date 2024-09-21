@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import { Box, Typography, Grid, Button } from "@mui/material";
 import seo from "../assets/images/seo.png";
 import mobile from "../assets/images/mobile.png";
@@ -11,6 +11,7 @@ import BackgroundLeftCircleIcon from "../assets/icons/backgroundLeftCircleIcon";
 import { useTheme, useMediaQuery } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { useLocation } from "react-router-dom";
 
 const ServiceCard = ({ image, title, description, buttonText, onClick }) => (
   <Grid
@@ -41,8 +42,6 @@ const ServiceCard = ({ image, title, description, buttonText, onClick }) => (
           width: { xs: "100%", sm: "90%", md: "80%", lg: "70%", xl: "60%" },
           maxWidth: "1000px",
           marginBottom: "2rem",
-          // borderRadius: "8px",
-          // boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)",
         }}
       />
     </Grid>
@@ -54,7 +53,6 @@ const ServiceCard = ({ image, title, description, buttonText, onClick }) => (
         variant="contained"
         color="primary"
         sx={{
-          // marginTop: theme.spacing(6),
           backgroundColor: "#2196f3",
           "&:hover": {
             backgroundColor: "#1976d2",
@@ -77,56 +75,109 @@ const ServiceCard = ({ image, title, description, buttonText, onClick }) => (
 
 const Services = () => {
   const { t } = useTranslation();
+  const mobileRef = useRef(null);
+  const webRef = useRef(null);
+  const ecommerceRef = useRef(null);
+  const seoRef = useRef(null);
+
   const services = [
     {
       image: mobile,
       title: t("services.mobileDevelopment.title"),
       description: t("services.mobileDevelopment.description"),
       buttonText: t("services.mobileDevelopment.buttonText"),
+      ref: mobileRef,
     },
     {
       image: website,
       title: t("services.websiteDevelopment.title"),
       description: t("services.websiteDevelopment.description"),
       buttonText: t("services.websiteDevelopment.buttonText"),
+      ref: webRef,
     },
     {
       image: ecommerce,
       title: t("services.ecommerceSolutions.title"),
       description: t("services.ecommerceSolutions.description"),
       buttonText: t("services.ecommerceSolutions.buttonText"),
+      ref: ecommerceRef,
     },
     {
       image: seo,
       title: t("services.seoOptimization.title"),
       description: t("services.seoOptimization.description"),
       buttonText: t("services.seoOptimization.buttonText"),
+      ref: seoRef,
     },
   ];
+
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
   const formRef = useRef(null);
+  const location = useLocation();
 
   const scrollToForm = () => {
     formRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const scrollToService = (serviceRef) => {
+    serviceRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    if (location.state?.serviceType) {
+      const serviceType = location.state.serviceType;
+      switch (serviceType) {
+        case "mobile":
+          scrollToService(mobileRef);
+          break;
+        case "website":
+          scrollToService(webRef);
+          break;
+        case "ecommerce":
+          scrollToService(ecommerceRef);
+          break;
+        case "seo":
+          scrollToService(seoRef);
+          break;
+        default:
+          break;
+      }
+    }
+  }, [location.state]);
+
   return (
     <Box
       sx={{
         padding: "2rem 0",
-        background: `
-        linear-gradient(to bottom, white, #ECF9FF)`,
+        background: `linear-gradient(to bottom, white, #ECF9FF)`,
       }}
     >
+      <Button
+        variant="contained"
+        color="primary"
+        sx={{
+          backgroundColor: "#2196f3",
+          "&:hover": {
+            backgroundColor: "#1976d2",
+          },
+          boxShadow: "0 4px 20px rgba(0, 0, 0, 0.1)",
+          borderRadius: "20px",
+          padding: "10px 30px",
+          fontSize: "16px",
+          fontWeight: "bold",
+          textTransform: "none",
+        }}
+        endIcon={<ArrowForwardIcon />}
+        onClick={() => scrollToService(seoRef)}
+      >
+        Scroll!
+      </Button>
       <Box
         sx={{
           textAlign: "center",
           padding: "2rem",
-          // backgroundColor: "#1976d2",
           color: "black",
-          // borderRadius: "10px",
-          // boxShadow: "0 4px 20px rgba(0, 0, 0, 0.1)",
           maxWidth: { xl: "70%", lg: "80", md: "90" },
           margin: "0 auto",
         }}
@@ -152,14 +203,15 @@ const Services = () => {
         </Typography>
       </Box>
       {services.map((service, index) => (
-        <ServiceCard
-          key={index}
-          image={service.image}
-          title={service.title}
-          description={service.description}
-          buttonText={service.buttonText}
-          onClick={scrollToForm}
-        />
+        <div key={index} ref={service.ref}>
+          <ServiceCard
+            image={service.image}
+            title={service.title}
+            description={service.description}
+            buttonText={service.buttonText}
+            onClick={scrollToForm}
+          />
+        </div>
       ))}
       <div ref={formRef}>
         <FormSection />

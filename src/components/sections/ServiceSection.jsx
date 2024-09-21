@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, Link, Button } from "@mui/material";
+import { Box, Typography, Button } from "@mui/material";
 import { useTheme, useMediaQuery } from "@mui/material";
 import seo from "../../assets/images/seo.png";
 import mobile from "../../assets/images/mobile.png";
@@ -8,7 +8,7 @@ import ecommerce from "../../assets/images/ecommerce.png";
 import GetInTouchButton from "../buttons/GetInTouchButton";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { useTranslation } from "react-i18next"; // Importing the translation hook
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const ServicesSection = () => {
   const { t } = useTranslation(); // Accessing the translation function
@@ -18,24 +18,28 @@ const ServicesSection = () => {
 
   const services = [
     {
-      image: seo,
-      title: t("servicesSection.seo.title"), // Translated title
-      description: t("servicesSection.seo.description"), // Translated description
-    },
-    {
-      image: ecommerce,
-      title: t("servicesSection.ecommerce.title"),
-      description: t("servicesSection.ecommerce.description"),
-    },
-    {
       image: mobile,
       title: t("servicesSection.mobile.title"),
       description: t("servicesSection.mobile.description"),
+      type: "mobile",
     },
     {
       image: website,
       title: t("servicesSection.website.title"),
       description: t("servicesSection.website.description"),
+      type: "website",
+    },
+    {
+      image: ecommerce,
+      title: t("servicesSection.ecommerce.title"),
+      description: t("servicesSection.ecommerce.description"),
+      type: "ecommerce",
+    },
+    {
+      image: seo,
+      title: t("servicesSection.seo.title"), // Translated title
+      description: t("servicesSection.seo.description"), // Translated description
+      type: "seo",
     },
   ];
 
@@ -170,7 +174,8 @@ const ServicesSection = () => {
               {service.description}
             </Typography>
             <Link
-              href="#"
+              to="/synernova/services"
+              state={{ serviceType: service.type }}
               sx={{
                 color: "#007BFF",
                 textDecoration: "none",
