@@ -107,6 +107,7 @@ const de = {
       phoneNumber: "Telefonnummer",
       message: "Erzählen Sie uns von Ihrer Projektidee",
       send: "Senden",
+      control: "Bitte füllen Sie das Pflichtfeld aus.",
     },
     aboutUsIntro: {
       title: "Lernen Sie uns kennen",

@@ -104,6 +104,7 @@ const en = {
       phoneNumber: "Phone number",
       message: "Tell us about your project idea",
       send: "Send",
+      control: "Please fill out the required field.",
     },
     aboutUsIntro: {
       title: "Get to Know Us",

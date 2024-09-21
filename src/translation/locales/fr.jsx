@@ -108,6 +108,7 @@ const fr = {
       phoneNumber: "Numéro de téléphone",
       message: "Parlez-nous de votre idée de projet",
       send: "Envoyer",
+      control: "Veuillez remplir le champ obligatoire.",
     },
     aboutUsIntro: {
       title: "Faites notre connaissance",

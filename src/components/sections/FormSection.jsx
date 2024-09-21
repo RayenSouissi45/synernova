@@ -25,8 +25,14 @@ const FormSection = () => {
     lastName: "",
     email: "",
     phoneNumber: "",
-    message: "", // The message field is present here
+    message: "",
   });
+
+  const [errors, setErrors] = useState({
+    firstName: false,
+    email: false,
+  });
+
   const [snackbarOpen, setSnackbarOpen] = useState(false);
   const [snackbarMessage, setSnackbarMessage] = useState("");
   const [snackbarSeverity, setSnackbarSeverity] = useState("success");
@@ -40,6 +46,21 @@ const FormSection = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // Validation for name and email
+    const isFirstNameEmpty = formData.firstName === "";
+    const isEmailEmpty = formData.email === "";
+
+    if (isFirstNameEmpty || isEmailEmpty) {
+      setErrors({
+        firstName: isFirstNameEmpty,
+        email: isEmailEmpty,
+      });
+      setSnackbarMessage(t("formSection.control"));
+      setSnackbarSeverity("error");
+      setSnackbarOpen(true);
+      return; // Don't send the email if fields are empty
+    }
 
     const emailData = {
       first_name: formData.firstName,
@@ -73,6 +94,7 @@ const FormSection = () => {
         }
       );
 
+    // Reset form
     setFormData({
       firstName: "",
       lastName: "",
@@ -80,16 +102,16 @@ const FormSection = () => {
       phoneNumber: "",
       message: "",
     });
+
+    // Reset validation errors
+    setErrors({
+      firstName: false,
+      email: false,
+    });
   };
 
   return (
-    <Box
-      sx={{
-        padding: "2rem",
-        borderRadius: "8px",
-      }}
-      ref={formRef}
-    >
+    <Box sx={{ padding: "2rem", borderRadius: "8px" }} ref={formRef}>
       <Box sx={{ padding: "2rem" }} component="form" onSubmit={handleSubmit}>
         <Grid container spacing={4} alignItems="center">
           <Grid item xs={12} md={6}>
@@ -131,12 +153,7 @@ const FormSection = () => {
                 marginBottom: "1.5rem",
               }}
             >
-              <ForumIcon
-                sx={{
-                  fontSize: "48px",
-                  color: "#1976d2",
-                }}
-              />
+              <ForumIcon sx={{ fontSize: "48px", color: "#1976d2" }} />
             </Box>
             <Grid container spacing={3}>
               <Grid item xs={12} sm={6}>
@@ -147,6 +164,8 @@ const FormSection = () => {
                   name="firstName"
                   value={formData.firstName}
                   onChange={handleChange}
+                  error={errors.firstName}
+                  helperText={errors.firstName && t("formSection.control")}
                 />
               </Grid>
               <Grid item xs={12} sm={6}>
@@ -167,6 +186,8 @@ const FormSection = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
+                  error={errors.email}
+                  helperText={errors.email && t("formSection.control")}
                 />
               </Grid>
               <Grid item xs={12} sm={6}>
