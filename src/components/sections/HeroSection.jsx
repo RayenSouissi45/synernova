@@ -34,7 +34,7 @@ const HeroSection = ({ scrollToForm }) => {
         flexDirection: isSmallScreen ? "column" : "row-reverse",
         alignItems: "center",
         justifyContent: "space-between",
-        marginTop: "1rem",
+        paddingTop: "1rem",
       }}
     >
       {/* Image Box */}
