@@ -105,7 +105,7 @@ const de = {
       lastName: "Nachname",
       email: "E-Mail",
       phoneNumber: "Telefonnummer",
-      message: "Nachricht",
+      message: "Erzählen Sie uns von Ihrer Projektidee",
       send: "Senden",
     },
     aboutUsIntro: {

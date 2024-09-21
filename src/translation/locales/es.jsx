@@ -103,7 +103,7 @@ const es = {
       lastName: "Apellido",
       email: "Correo electrónico",
       phoneNumber: "Número de teléfono",
-      message: "Mensaje",
+      message: "Cuéntanos sobre tu idea de proyecto",
       send: "Enviar",
     },
     aboutUsIntro: {

@@ -106,7 +106,7 @@ const fr = {
       lastName: "Nom de famille",
       email: "Email",
       phoneNumber: "Numéro de téléphone",
-      message: "Message",
+      message: "Parlez-nous de votre idée de projet",
       send: "Envoyer",
     },
     aboutUsIntro: {

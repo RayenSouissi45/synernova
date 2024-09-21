@@ -50,7 +50,10 @@ const HomePage = () => {
       {/* ---- Company Section ----- */}
       <CompanySection />
       {/* ---- FORM SECTION ----- */}
-      <div ref={formRef}>{/* <FormSection /> */}</div>
+      <div ref={formRef}>
+        {" "}
+        <FormSection />{" "}
+      </div>
       {/* ----- Footer Section ----- */}
     </Container>
   );

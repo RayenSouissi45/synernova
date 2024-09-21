@@ -102,7 +102,7 @@ const en = {
       lastName: "Last name",
       email: "Email",
       phoneNumber: "Phone number",
-      message: "Message",
+      message: "Tell us about your project idea",
       send: "Send",
     },
     aboutUsIntro: {
