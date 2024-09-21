@@ -143,7 +143,7 @@ const Header = () => {
         <ListItem
           button
           component={NavLink}
-          to="/secondtest"
+          to="/synernova"
           sx={{
             color: "#ffffff",
             "&.active": {
@@ -160,7 +160,7 @@ const Header = () => {
         <ListItem
           button
           component={NavLink}
-          to="/secondtest/about"
+          to="/synernova/about"
           sx={{
             color: "#ffffff",
             "&.active": {
@@ -177,7 +177,7 @@ const Header = () => {
         <ListItem
           button
           component={NavLink}
-          to="/secondtest/services"
+          to="/synernova/services"
           sx={{
             color: "#ffffff",
             "&.active": {
@@ -245,7 +245,7 @@ const Header = () => {
         <Box sx={{ display: { xs: "none", md: "flex" }, gap: 2 }}>
           <StyledButton
             component={NavLink}
-            to="/secondtest"
+            to="/synernova"
             sx={{ fontWeight: "bold" }}
             style={({ isActive }) => ({
               color: isActive ? "#0077E6" : "#003873", // Change color when active
@@ -256,7 +256,7 @@ const Header = () => {
           </StyledButton>
           <StyledButton
             component={NavLink}
-            to="/secondtest/about"
+            to="/synernova/about"
             sx={{ color: "black", fontWeight: "bold" }}
             style={({ isActive }) => ({
               color: isActive ? "#0077E6" : "#003873", // Change color when active
@@ -266,7 +266,7 @@ const Header = () => {
           </StyledButton>
           <StyledButton
             component={NavLink}
-            to="/secondtest/services"
+            to="/synernova/services"
             sx={{ color: "black", fontWeight: "bold" }}
             style={({ isActive }) => ({
               color: isActive ? "#0077E6" : "#003873", // Change color when active

@@ -21,7 +21,7 @@ function App() {
           <Routes>
             <Route path="/synernova" element={<Home />} />
             <Route path="/synernova/about" element={<About />} />
-            <Route path="/secondtest/services" element={<Services />} />
+            <Route path="/synernova/services" element={<Services />} />
           </Routes>
         </div>
         <FooterSection />
