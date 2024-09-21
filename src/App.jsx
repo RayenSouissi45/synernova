@@ -17,7 +17,7 @@ function App() {
         {" "}
         <ScrollToTop /> Ensure this is placed here
         <Header />
-        <div style={{ marginTop: "120px" }}>
+        <div style={{ marginTop: "50px" }}>
           <Routes>
             <Route path="/secondtest" element={<Home />} />
             <Route path="/secondtest/about" element={<About />} />

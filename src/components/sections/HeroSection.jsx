@@ -34,7 +34,7 @@ const HeroSection = ({ scrollToForm }) => {
         flexDirection: isSmallScreen ? "column" : "row-reverse",
         alignItems: "center",
         justifyContent: "space-between",
-        // marginTop: "1rem",
+        marginTop: "1rem",
       }}
     >
       {/* Image Box */}
@@ -86,7 +86,7 @@ const HeroSection = ({ scrollToForm }) => {
             maxWidth: "80%",
           }}
         >
-          {t("heroSection.title")}{" "}
+          {t("heroSection.title")} z
           <span style={{ color: blueTextColor }}>
             {t("heroSection.highlight")}
           </span>
