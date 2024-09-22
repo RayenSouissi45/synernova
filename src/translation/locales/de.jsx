@@ -204,6 +204,7 @@ const de = {
       quickLinks: "Schnellzugriff",
       followUs: "Folgen Sie uns",
       allRightsReserved: "Alle Rechte Vorbehalten",
+      contactUs: "Kontaktieren Sie uns",
     },
   },
 };

@@ -206,6 +206,7 @@ const fr = {
       quickLinks: "Liens Rapides",
       followUs: "Suivez-nous",
       allRightsReserved: "Tous Droits Réservés",
+      contactUs: "Contactez-nous",
     },
   },
 };

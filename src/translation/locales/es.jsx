@@ -214,6 +214,7 @@ const es = {
       quickLinks: "Enlaces Rápidos",
       followUs: "Síguenos",
       allRightsReserved: "Todos los Derechos Reservados",
+      contactUs: "Contáctanos",
     },
   },
 };

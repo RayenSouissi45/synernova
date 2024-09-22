@@ -7,7 +7,7 @@ import {
   IconButton,
   useMediaQuery,
 } from "@mui/material";
-import { Facebook, Twitter, LinkedIn } from "@mui/icons-material";
+import { Facebook, Twitter, LinkedIn, Email, Phone } from "@mui/icons-material"; // Import icons
 import Logo from "../../assets/images/footersynernova.png"; // Replace with the actual path to your logo file
 import { useTheme } from "@mui/material/styles";
 import { useTranslation } from "react-i18next";
@@ -35,7 +35,7 @@ const FooterSection = () => {
           alignItems={isSmallScreen || isMediumScreen ? "center" : "flex-start"}
         >
           {/* Logo and Name */}
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} md={3}>
             <Box
               display="flex"
               flexDirection={isSmallScreen || isMediumScreen ? "column" : "row"}
@@ -52,14 +52,11 @@ const FooterSection = () => {
                   marginBottom: isSmallScreen || isMediumScreen ? "1rem" : "0",
                 }}
               />
-              {/* <Typography variant="h6" component="div">
-                Synernova
-              </Typography> */}
             </Box>
           </Grid>
 
           {/* Links */}
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} md={3}>
             <Typography variant="h6" gutterBottom>
               {t("footer.quickLinks")}
             </Typography>
@@ -84,8 +81,33 @@ const FooterSection = () => {
             </Box>
           </Grid>
 
+          {/* Contact Us with Icons */}
+          <Grid item xs={12} md={3}>
+            <Typography variant="h6" gutterBottom>
+              {t("footer.contactUs")}
+            </Typography>
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                gap: isSmallScreen || isMediumScreen ? "0.5rem" : "1rem",
+                alignItems:
+                  isSmallScreen || isMediumScreen ? "center" : "flex-start",
+              }}
+            >
+              <Box display="flex" alignItems="center" gap="0.5rem">
+                <Email fontSize="small" /> {/* Email icon */}
+                <Typography variant="body1">info@synernova.com</Typography>
+              </Box>
+              <Box display="flex" alignItems="center" gap="0.5rem">
+                <Phone fontSize="small" /> {/* Phone icon */}
+                <Typography variant="body1">+41 78 253 9393</Typography>
+              </Box>
+            </Box>
+          </Grid>
+
           {/* Social Media Icons */}
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} md={3}>
             <Typography variant="h6" gutterBottom>
               {t("footer.followUs")}
             </Typography>

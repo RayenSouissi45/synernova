@@ -214,6 +214,7 @@ const en = {
       quickLinks: "Quick Links",
       followUs: "Follow Us",
       allRightsReserved: "All Rights Reserved",
+      contactUs: "Contact Us",
     },
   },
 };
