@@ -128,7 +128,7 @@ const Header = () => {
       onKeyDown={toggleDrawer(false)} // Only on keydown, not click
     >
       <DrawerHeader>
-        <Link to="/synernova">
+        <Link to="/">
           <Box
             component="img"
             src={synernovaLogoWeb}
@@ -145,7 +145,7 @@ const Header = () => {
         <ListItem
           button
           component={NavLink}
-          to="/synernova"
+          to="/"
           sx={{
             color: "#ffffff",
             "&.active": {
@@ -162,7 +162,7 @@ const Header = () => {
         <ListItem
           button
           component={NavLink}
-          to="/synernova/about"
+          to="/about"
           sx={{
             color: "#ffffff",
             "&.active": {
@@ -179,7 +179,7 @@ const Header = () => {
         <ListItem
           button
           component={NavLink}
-          to="/synernova/services"
+          to="/services"
           sx={{
             color: "#ffffff",
             "&.active": {
@@ -230,7 +230,7 @@ const Header = () => {
       }}
     >
       <Toolbar>
-        <Link to="/synernova">
+        <Link to="/">
           <Box
             component="img"
             src={synernovaLogoWeb}
@@ -249,7 +249,7 @@ const Header = () => {
         <Box sx={{ display: { xs: "none", md: "flex" }, gap: 2 }}>
           <StyledButton
             component={NavLink}
-            to="/synernova"
+            to="/"
             sx={{ fontWeight: "bold" }}
             style={({ isActive }) => ({
               color: isActive ? "#0077E6" : "#003873", // Change color when active
@@ -260,7 +260,7 @@ const Header = () => {
           </StyledButton>
           <StyledButton
             component={NavLink}
-            to="/synernova/about"
+            to="/about"
             sx={{ color: "black", fontWeight: "bold" }}
             style={({ isActive }) => ({
               color: isActive ? "#0077E6" : "#003873", // Change color when active
@@ -270,7 +270,7 @@ const Header = () => {
           </StyledButton>
           <StyledButton
             component={NavLink}
-            to="/synernova/services"
+            to="/services"
             sx={{ color: "black", fontWeight: "bold" }}
             style={({ isActive }) => ({
               color: isActive ? "#0077E6" : "#003873", // Change color when active

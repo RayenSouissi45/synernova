@@ -112,7 +112,7 @@ const CompanySection = () => {
               },
             }}
             onClick={() => {
-              navigate("/synernova/about");
+              navigate("/about");
               window.scrollTo(0, 0); // Scrolls to the top of the page
             }}
           >

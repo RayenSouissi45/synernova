@@ -19,9 +19,9 @@ function App() {
         <Header />
         <div style={{ paddingTop: "70px", backgroundColor: "white" }}>
           <Routes>
-            <Route path="/synernova" element={<Home />} />
-            <Route path="/synernova/about" element={<About />} />
-            <Route path="/synernova/services" element={<Services />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
           </Routes>
         </div>
         <FooterSection />

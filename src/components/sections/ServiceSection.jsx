@@ -174,7 +174,7 @@ const ServicesSection = () => {
               {service.description}
             </Typography>
             <Link
-              to="/synernova/services"
+              to="/services"
               state={{ serviceType: service.type }}
               sx={{
                 color: "#007BFF",
@@ -210,7 +210,7 @@ const ServicesSection = () => {
         }}
         endIcon={<ArrowForwardIcon />}
         onClick={() => {
-          navigate("/synernova/services");
+          navigate("/services");
           window.scrollTo(0, 0); // Scrolls to the top of the page
         }}
       >
