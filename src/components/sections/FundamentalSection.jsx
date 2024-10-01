@@ -109,7 +109,9 @@ const FundamentalsSection = () => {
             <Typography variant="h6" gutterBottom>
               {item.title}
             </Typography>
-            <Typography variant="body1">{item.description}</Typography>
+            <Typography variant="body1" sx={{ paddingX: "7px" }}>
+              {item.description}
+            </Typography>
           </Grid>
         ))}
       </Grid>
