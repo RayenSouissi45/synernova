@@ -69,15 +69,15 @@ const FooterSection = () => {
                   isSmallScreen || isMediumScreen ? "center" : "flex-start",
               }}
             >
-              <a href="/" style={linkStyle}>
-                {t("navbar.home")}
-              </a>
-              <a href="/about" style={linkStyle}>
-                {t("navbar.aboutUs")}
-              </a>
-              <a href="/services" style={linkStyle}>
-                {t("navbar.ourServices")}
-              </a>
+              <Link href="/" passHref>
+                <a style={linkStyle}>{t("navbar.home")}</a>
+              </Link>
+              <Link href="/about" passHref>
+                <a style={linkStyle}>{t("navbar.aboutUs")}</a>
+              </Link>
+              <Link href="/services" passHref>
+                <a style={linkStyle}>{t("navbar.ourServices")}</a>
+              </Link>
             </Box>
           </Grid>
 
