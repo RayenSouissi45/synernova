@@ -160,6 +160,9 @@ const Services = () => {
           color: "black",
           maxWidth: { xl: "70%", lg: "80", md: "90" },
           margin: "0 auto",
+          position: "relative",
+
+          zIndex: 1,
         }}
       >
         <Typography
