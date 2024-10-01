@@ -11,6 +11,7 @@ import { Facebook, Twitter, LinkedIn, Email, Phone } from "@mui/icons-material";
 import Logo from "../../assets/images/footersynernova.png"; // Replace with the actual path to your logo file
 import { useTheme } from "@mui/material/styles";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const FooterSection = () => {
   const theme = useTheme();
@@ -69,14 +70,14 @@ const FooterSection = () => {
                   isSmallScreen || isMediumScreen ? "center" : "flex-start",
               }}
             >
-              <Link href="/" passHref>
-                <a style={linkStyle}>{t("navbar.home")}</a>
+              <Link to="/" style={linkStyle}>
+                {t("navbar.home")}
               </Link>
-              <Link href="/about" passHref>
-                <a style={linkStyle}>{t("navbar.aboutUs")}</a>
+              <Link to="/about" style={linkStyle}>
+                {t("navbar.aboutUs")}
               </Link>
-              <Link href="/services" passHref>
-                <a style={linkStyle}>{t("navbar.ourServices")}</a>
+              <Link to="/services" style={linkStyle}>
+                {t("navbar.ourServices")}
               </Link>
             </Box>
           </Grid>
