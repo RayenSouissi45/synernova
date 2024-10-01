@@ -111,7 +111,7 @@ const FormSection = () => {
   };
 
   return (
-    <Box sx={{ padding: "2rem", borderRadius: "8px" }} ref={formRef}>
+    <Box sx={{ borderRadius: "8px" }} ref={formRef}>
       <Box sx={{ padding: "2rem" }} component="form" onSubmit={handleSubmit}>
         <Grid container spacing={4} alignItems="center">
           <Grid item xs={12} md={6}>

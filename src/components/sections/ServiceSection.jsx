@@ -49,8 +49,8 @@ const ServicesSection = () => {
         padding: theme.spacing(8, 4),
         textAlign: "center",
         marginTop: theme.spacing(10),
-        width: "95%",
-        margin: "0 auto",
+        // width: "95%",
+        // margin: "0 auto",
         position: "relative",
         overflow: "hidden",
       }}

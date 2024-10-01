@@ -199,17 +199,19 @@ const Services = () => {
       <div ref={formRef}>
         <FormSection />
       </div>
-      <Box
-        sx={{
-          position: "absolute",
-          top: isSmallScreen ? "10%" : "100%",
-          right: isSmallScreen ? "5%" : "2%",
-          width: isSmallScreen ? "50px" : "100px",
-          zIndex: 0,
-        }}
-      >
-        <BackgroundCircleIcon />
-      </Box>
+      {isSmallScreen ? null : (
+        <Box
+          sx={{
+            position: "absolute",
+            top: isSmallScreen ? "10%" : "100%",
+            right: isSmallScreen ? "5%" : "2%",
+            width: isSmallScreen ? "50px" : "100px",
+            zIndex: 0,
+          }}
+        >
+          <BackgroundCircleIcon />
+        </Box>
+      )}
       <Box
         sx={{
           position: "absolute",

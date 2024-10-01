@@ -80,6 +80,8 @@ const WhyChooseUsSection = () => {
           alignItems: "center",
           justifyContent: "space-between",
           width: "100%", // Ensure the content takes up the full width
+          position: "relative",
+          zIndex: 1,
         }}
       >
         {/* Left Side - Text */}

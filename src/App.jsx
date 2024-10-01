@@ -13,12 +13,9 @@ import FooterSection from "./components/sections/FooterSection";
 function App() {
   return (
     <ScrollProvider>
-      {/* <>Hi</>
-      <Header /> */}
-
       <Router>
         {" "}
-        <ScrollToTop /> Ensure this is placed here
+        <ScrollToTop />
         <Header />
         <div style={{ paddingTop: "70px", backgroundColor: "white" }}>
           <Routes>
