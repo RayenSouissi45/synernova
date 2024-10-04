@@ -1,7 +1,7 @@
 const fr = {
   translation: {
     heroSection: {
-      title: "Transformer les idées en",
+      title: "Transformez vos idées en",
       highlight: "Solutions technologiques",
       description:
         "Donnez à votre entreprise les moyens de réussir grâce à des solutions logicielles innovantes adaptées à vos besoins, offrant une valeur exceptionnelle à vos clients.",
@@ -25,7 +25,7 @@ const fr = {
       highlight: "Choisir",
       excellence: "Vous méritez l'excellence",
       paragraph1:
-        "Nous sommes une entreprise internationale présente dans des régions où les coûts de main-d'œuvre sont plus faibles, ce qui nous permet de vous offrir des prix compétitifs tout en garantissant une qualité supérieure. Nos représentants en Europe assurent une collaboration fluide, vous permettant de bénéficier de services de haute qualité à des tarifs très compétitifs.",
+        "Nous sommes une entreprise internationale dédiée à offrir des services de haute qualité grâce à notre présence stratégique dans différentes régions. Nos représentants en Europe assurent une collaboration fluide et efficace, vous permettant de bénéficier de notre expertise et de solutions sur mesure adaptées à vos besoins.",
       imageAlt: "Pourquoi nous choisir",
     },
     servicesSection: {

@@ -1,7 +1,7 @@
 const en = {
   translation: {
     heroSection: {
-      title: "Transforming Ideas Into",
+      title: "Transform your ideas into",
       highlight: "Tech Solutions",
       description:
         "Empowering your business with innovative software solutions tailored to your needs, delivering exceptional value to your customers.",
@@ -24,7 +24,7 @@ const en = {
       highlight: "Us",
       excellence: "You deserve excellence",
       paragraph1:
-        "We are an international company with a presence in regions where labor costs are lower, allowing us to offer you competitive prices while also providing superior quality. Our representatives in Europe ensure seamless collaboration, enabling you to benefit from high-quality services at very competitive rates.",
+        "We are an international company dedicated to offering high-quality services through our strategic presence in different regions. Our representatives in Europe ensure smooth and efficient collaboration, allowing you to benefit from our expertise and tailor-made solutions adapted to your needs.",
       imageAlt: "Why Choose Us",
     },
     servicesSection: {

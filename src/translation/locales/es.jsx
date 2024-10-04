@@ -1,7 +1,7 @@
 const es = {
   translation: {
     heroSection: {
-      title: "Transformando ideas en",
+      title: "Transforma tus ideas en",
       highlight: "Soluciones tecnológicas",
       description:
         "Empoderando tu negocio con soluciones de software innovadoras adaptadas a tus necesidades, ofreciendo un valor excepcional a tus clientes.",
@@ -24,7 +24,7 @@ const es = {
       highlight: "nosotros",
       excellence: "Te mereces la excelencia",
       paragraph1:
-        "Somos una empresa internacional con presencia en regiones donde los costos laborales son más bajos, lo que nos permite ofrecerte precios competitivos mientras proporcionamos una calidad superior. Nuestros representantes en Europa aseguran una colaboración sin problemas, permitiéndote beneficiarte de servicios de alta calidad a tarifas muy competitivas.",
+        "Somos una empresa internacional dedicada a ofrecer servicios de alta calidad gracias a nuestra presencia estratégica en diferentes regiones. Nuestros representantes en Europa aseguran una colaboración fluida y eficiente, permitiéndole beneficiarse de nuestra experiencia y soluciones a medida adaptadas a sus necesidades.",
       imageAlt: "Por qué elegirnos",
     },
     servicesSection: {

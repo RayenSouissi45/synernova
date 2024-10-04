@@ -1,7 +1,7 @@
 const de = {
   translation: {
     heroSection: {
-      title: "Ideen in",
+      title: "Verwandeln Sie Ihre Ideen in",
       highlight: "Technologielösungen",
       description:
         "Wir stärken Ihr Unternehmen mit innovativen Softwarelösungen, die auf Ihre Bedürfnisse zugeschnitten sind und außergewöhnlichen Mehrwert für Ihre Kunden bieten.",
@@ -24,7 +24,7 @@ const de = {
       highlight: "uns wählen",
       excellence: "Sie verdienen Exzellenz",
       paragraph1:
-        "Wir sind ein internationales Unternehmen mit einer Präsenz in Regionen, in denen die Arbeitskosten niedriger sind, was es uns ermöglicht, Ihnen wettbewerbsfähige Preise bei gleichzeitig überlegener Qualität anzubieten. Unsere Vertreter in Europa sorgen für eine nahtlose Zusammenarbeit, sodass Sie von hochwertigen Dienstleistungen zu sehr wettbewerbsfähigen Preisen profitieren können.",
+        "Wir sind ein internationales Unternehmen, das sich der Bereitstellung hochwertiger Dienstleistungen durch unsere strategische Präsenz in verschiedenen Regionen widmet. Unsere Vertreter in Europa sorgen für eine reibungslose und effiziente Zusammenarbeit, sodass Sie von unserer Expertise und maßgeschneiderten Lösungen profitieren können, die auf Ihre Bedürfnisse zugeschnitten sind.",
       imageAlt: "Warum uns wählen",
     },
     servicesSection: {
