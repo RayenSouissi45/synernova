@@ -68,6 +68,7 @@ const FormSection = () => {
       email: formData.email,
       phone_number: formData.phoneNumber,
       message: formData.message,
+      from_name: formData.firstName + " " + formData.lastName, // Use the user's name as the sender
     };
 
     emailjs
