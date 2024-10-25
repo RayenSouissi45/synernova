@@ -72,10 +72,10 @@ const FormSection = () => {
 
     emailjs
       .send(
-        "service_qtfgvwd",
+        "service_uh9lyne",
         "template_h3ynm7d",
         emailData,
-        "U5jq7NYPK5Sa73eHU"
+        "Nb9IfZBv5tYdtK3Q2"
       )
       .then(
         (result) => {
