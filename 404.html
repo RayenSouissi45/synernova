@@ -1,6 +1,6 @@
 <script>
     // Redirect to index.html for React Router
-    var redirectTo = location.pathname.replace(/^\//, '');
+    var redirectTo = location.pathname + location.search;
     window.location.replace('/?' + redirectTo);
   </script>
   
