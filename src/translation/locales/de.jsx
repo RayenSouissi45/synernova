@@ -41,13 +41,14 @@ const de = {
         description: "Erstellen und verwalten Sie Ihren Online-Shop effektiv.",
       },
       mobile: {
-        title: "Mobile Entwicklung",
+        title: "Mobile Entwicklung & Wartung",
         description:
-          "Erstellen Sie leistungsstarke mobile Anwendungen für iOS und Android.",
+          "Erstellen und warten Sie leistungsstarke mobile Anwendungen für iOS und Android.",
       },
       website: {
-        title: "Webentwicklung",
-        description: "Entwerfen und entwickeln Sie beeindruckende Websites.",
+        title: "Webentwicklung & Wartung",
+        description:
+          "Entwerfen, entwickeln und warten Sie beeindruckende Websites.",
       },
       learnMore: "Mehr erfahren →",
       button: "Entdecken Sie unsere Dienstleistungen",
@@ -158,16 +159,21 @@ const de = {
     },
     services: {
       mobileDevelopment: {
-        title: "Mobile Entwicklung",
+        title: "Mobile Entwicklung & Wartung",
         description: `
-          Mobile Anwendungen sind für Unternehmen, die ihren Kunden eine bequeme und ansprechende Möglichkeit bieten möchten, mit ihren Dienstleistungen zu interagieren, unverzichtbar geworden. Wir sind auf die Entwicklung leistungsstarker mobiler Apps für iOS- und Android-Plattformen spezialisiert, die auf Ihre spezifischen Geschäftsanforderungen zugeschnitten sind.
+         Mobile Anwendungen sind für Unternehmen, die ihren Kunden eine bequeme und ansprechende Möglichkeit bieten möchten, 
+    mit ihren Dienstleistungen zu interagieren, unverzichtbar geworden. Wir sind auf die Entwicklung und Wartung 
+    leistungsstarker mobiler Apps für iOS- und Android-Plattformen spezialisiert, die auf Ihre spezifischen 
+    Geschäftsanforderungen zugeschnitten sind.
         `,
         buttonText: "Starten Sie Ihr mobiles Projekt",
       },
       websiteDevelopment: {
-        title: "Webentwicklung",
+        title: "Webentwicklung & Wartung",
         description: `
-          Eine professionelle, gut gestaltete Website ist das Fundament jedes Unternehmens im digitalen Zeitalter. Unsere Webentwicklungsdienste konzentrieren sich darauf, beeindruckende, responsive Websites zu erstellen, die nicht nur optisch ansprechend, sondern auch schnell, sicher und benutzerfreundlich sind.
+         Eine professionelle, gut gestaltete Website ist das Fundament jedes Unternehmens im digitalen Zeitalter. 
+    Unsere Webentwicklungs- und Wartungsdienste konzentrieren sich darauf, beeindruckende, responsive Websites zu erstellen und zu warten, 
+    die nicht nur optisch ansprechend, sondern auch schnell, sicher und benutzerfreundlich sind.
         `,
         buttonText: "Erstellen Sie jetzt Ihre Website",
       },

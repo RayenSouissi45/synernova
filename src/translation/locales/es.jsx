@@ -42,12 +42,13 @@ const es = {
           "Construye y gestiona tu tienda en línea de manera efectiva.",
       },
       mobile: {
-        title: "Desarrollo móvil",
-        description: "Crea potentes aplicaciones móviles para iOS y Android.",
+        title: "Desarrollo y Mantenimiento Móvil",
+        description:
+          "Crea y mantén potentes aplicaciones móviles para iOS y Android.",
       },
       website: {
-        title: "Desarrollo de sitios web",
-        description: "Diseña y desarrolla sitios web impresionantes.",
+        title: "Desarrollo y Mantenimiento de Sitios Web",
+        description: "Diseña, desarrolla y mantén sitios web impresionantes.",
       },
       learnMore: "Saber más →",
       button: "Descubre nuestros servicios",
@@ -156,24 +157,25 @@ const es = {
     },
     services: {
       mobileDevelopment: {
-        title: "Desarrollo móvil",
+        title: "Desarrollo y Mantenimiento Móvil",
         description: `
           Las aplicaciones móviles se han vuelto esenciales para las empresas que buscan ofrecer a los clientes 
-          una forma conveniente y atractiva de interactuar con sus servicios. Nos especializamos 
-          en el desarrollo de aplicaciones móviles de alto rendimiento para plataformas iOS y Android, 
+          una forma conveniente y atractiva de interactuar con sus servicios. Nos especializamos en el desarrollo 
+          y mantenimiento de aplicaciones móviles de alto rendimiento para plataformas iOS y Android, 
           adaptadas para satisfacer tus necesidades comerciales específicas.
         `,
         buttonText: "Inicia tu proyecto móvil",
       },
       websiteDevelopment: {
-        title: "Desarrollo de sitios web",
+        title: "Desarrollo y Mantenimiento de Sitios Web",
         description: `
           Un sitio web profesional y bien diseñado es la piedra angular de cualquier empresa en la era digital. 
-          Nuestros servicios de desarrollo de sitios web se centran en crear sitios web impresionantes y receptivos, 
+          Nuestros servicios de desarrollo y mantenimiento de sitios web se centran en crear y mantener sitios web impresionantes y receptivos, 
           que no solo son visualmente atractivos, sino también rápidos, seguros y fáciles de navegar.
         `,
         buttonText: "Crea tu sitio web ahora",
       },
+
       ecommerceSolutions: {
         title: "Soluciones de comercio electrónico",
         description: `

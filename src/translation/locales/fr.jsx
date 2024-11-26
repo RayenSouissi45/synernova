@@ -42,13 +42,14 @@ const fr = {
         description: "Créez et gérez efficacement votre boutique en ligne.",
       },
       mobile: {
-        title: "Développement Mobile",
+        title: "Développement et Maintenance Mobile",
         description:
-          "Créez des applications mobiles puissantes pour iOS et Android.",
+          "Créez et maintenez des applications mobiles puissantes pour iOS et Android.",
       },
       website: {
-        title: "Développement de sites web",
-        description: "Concevez et développez des sites web remarquables.",
+        title: "Développement et Maintenance de Sites Web",
+        description:
+          "Concevez, développez et maintenez des sites web remarquables.",
       },
       learnMore: "En savoir plus →",
       button: "Découvrez nos services",
@@ -160,19 +161,25 @@ const fr = {
     },
     services: {
       mobileDevelopment: {
-        title: "Développement mobile",
+        title: "Développement et Maintenance Mobile",
         description: `
-          Les applications mobiles sont devenues essentielles pour les entreprises qui cherchent à offrir à leurs clients un moyen pratique et attrayant d'interagir avec leurs services. Nous sommes spécialisés dans le développement d'applications mobiles haute performance pour les plateformes iOS et Android, adaptées aux besoins spécifiques de votre entreprise.
+          Les applications mobiles sont devenues essentielles pour les entreprises qui cherchent à offrir à leurs clients 
+          un moyen pratique et attrayant d'interagir avec leurs services. Nous sommes spécialisés dans le développement 
+          et la maintenance d'applications mobiles haute performance pour les plateformes iOS et Android, 
+          adaptées aux besoins spécifiques de votre entreprise.
         `,
         buttonText: "Commencez votre projet mobile",
       },
       websiteDevelopment: {
-        title: "Développement de sites web",
+        title: "Développement et Maintenance de Sites Web",
         description: `
-          Un site web professionnel et bien conçu est la pierre angulaire de toute entreprise à l'ère du numérique. Nos services de développement de sites web se concentrent sur la création de sites web époustouflants et réactifs qui ne sont pas seulement attrayants visuellement, mais aussi rapides, sécurisés et faciles à naviguer.
+          Un site web professionnel et bien conçu est la pierre angulaire de toute entreprise à l'ère du numérique. 
+          Nos services de développement et de maintenance de sites web se concentrent sur la création et la gestion de sites web 
+          époustouflants et réactifs qui ne sont pas seulement attrayants visuellement, mais aussi rapides, sécurisés et faciles à naviguer.
         `,
         buttonText: "Créez votre site web maintenant",
       },
+
       ecommerceSolutions: {
         title: "Solutions E-commerce",
         description: `

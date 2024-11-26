@@ -41,12 +41,13 @@ const en = {
         description: "Build and manage your online store effectively.",
       },
       mobile: {
-        title: "Mobile Development",
-        description: "Create powerful mobile applications for iOS and Android.",
+        title: "Mobile Development & Maintenance",
+        description:
+          "Create and maintain powerful mobile applications for iOS and Android.",
       },
       website: {
-        title: "Website Development",
-        description: "Design and develop stunning websites.",
+        title: "Website Development & Maintenance",
+        description: "Design, develop, and maintain stunning websites.",
       },
       learnMore: "Learn more →",
       button: "Discover our services",
@@ -155,21 +156,21 @@ const en = {
     },
     services: {
       mobileDevelopment: {
-        title: "Mobile Development",
+        title: "Mobile Development & Maintenance",
         description: `
-          Mobile applications have become essential for businesses looking to offer customers 
-          a convenient and engaging way to interact with their services. We specialize in 
-          developing high-performance mobile apps for both iOS and Android platforms, 
-          tailored to meet your specific business needs.
+            Mobile applications have become essential for businesses looking to offer customers 
+            a convenient and engaging way to interact with their services. We specialize in 
+            developing and maintaining high-performance mobile apps for both iOS and Android platforms, 
+            tailored to meet your specific business needs.
         `,
         buttonText: "Start Your Mobile Project",
       },
       websiteDevelopment: {
-        title: "Website Development",
+        title: "Website Development & Maintenance",
         description: `
-          A professional, well-designed website is the cornerstone of any business in the digital age. 
-          Our Website Development services focus on creating stunning, responsive websites that are 
-          not only visually appealing but also fast, secure, and easy to navigate.
+            A professional, well-designed website is the cornerstone of any business in the digital age. 
+            Our Website Development & Maintenance services focus on creating and maintaining stunning, responsive websites 
+            that are not only visually appealing but also fast, secure, and easy to navigate.
         `,
         buttonText: "Build Your Website Now",
       },

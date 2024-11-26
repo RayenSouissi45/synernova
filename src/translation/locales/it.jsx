@@ -41,12 +41,13 @@ const it = {
         description: "Crea e gestisci efficacemente il tuo negozio online.",
       },
       mobile: {
-        title: "Sviluppo mobile",
-        description: "Crea potenti applicazioni mobili per iOS e Android.",
+        title: "Sviluppo e Manutenzione Mobile",
+        description:
+          "Crea e mantieni potenti applicazioni mobili per iOS e Android.",
       },
       website: {
-        title: "Sviluppo di siti web",
-        description: "Progetta e sviluppa siti web straordinari.",
+        title: "Sviluppo e Manutenzione di Siti Web",
+        description: "Progetta, sviluppa e mantieni siti web straordinari.",
       },
       learnMore: "Scopri di più →",
       button: "Scopri i nostri servizi",
@@ -156,21 +157,21 @@ const it = {
     },
     services: {
       mobileDevelopment: {
-        title: "Sviluppo mobile",
+        title: "Sviluppo e Manutenzione Mobile",
         description: `
           Le applicazioni mobili sono diventate essenziali per le aziende che cercano di offrire ai clienti 
           un modo conveniente e coinvolgente per interagire con i loro servizi. Siamo specializzati 
-          nello sviluppo di app mobili ad alte prestazioni per piattaforme iOS e Android, 
+          nello sviluppo e nella manutenzione di app mobili ad alte prestazioni per piattaforme iOS e Android, 
           su misura per soddisfare le tue specifiche esigenze aziendali.
         `,
         buttonText: "Inizia il tuo progetto mobile",
       },
       websiteDevelopment: {
-        title: "Sviluppo di siti web",
+        title: "Sviluppo e Manutenzione di Siti Web",
         description: `
           Un sito web professionale e ben progettato è la pietra angolare di qualsiasi azienda nell'era digitale. 
-          I nostri servizi di sviluppo di siti web si concentrano sulla creazione di siti web impressionanti e reattivi, 
-          che non sono solo visivamente attraenti, ma anche veloci, sicuri e facili da navigare.
+          I nostri servizi di sviluppo e manutenzione di siti web si concentrano sulla creazione e gestione di siti web 
+          impressionanti e reattivi, che non sono solo visivamente attraenti, ma anche veloci, sicuri e facili da navigare.
         `,
         buttonText: "Crea il tuo sito web ora",
       },
