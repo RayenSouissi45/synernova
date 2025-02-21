@@ -32,11 +32,11 @@ const PortfolioSection = () => {
 
   const portfolioItems = [
     { id: 1, title: "Aggastore", image: aggastore, link : "https://aggastore.tn/" },
-    { id: 2, title: "Lingo Store", image: lingo, link : "https://lingo-store.com/" },
-    { id: 3, title: "Kokocan", image: kokocan , link :"https://koko-deco.com/" },
-    { id: 4, title: "Les Essentielles Lab", image: lessentielleslab, link :"https://lesessentielleslab.com.tn/" },
-    { id: 5, title: "Karaoke Box", image: karaoke , link : "https://karaokebox-gammarth.com/" },
-    { id: 6, title: "Utopia Gammarth", image: utopia, link :"https://www.utopia-gammarth.com/" },
+    { id: 2, title: "Utopia Gammarth", image: utopia, link :"https://www.utopia-gammarth.com/" },
+    { id: 3, title: "Lingo Store", image: lingo, link : "https://lingo-store.com/" },
+    { id: 4, title: "Kokocan", image: kokocan , link :"https://koko-deco.com/" },
+    { id: 5, title: "Les Essentielles Lab", image: lessentielleslab, link :"https://lesessentielleslab.com.tn/" },
+    { id: 6, title: "Karaoke Box", image: karaoke , link : "https://karaokebox-gammarth.com/" },
   ];
 
   return (
