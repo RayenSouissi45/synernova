@@ -212,6 +212,12 @@ const de = {
       allRightsReserved: "Alle Rechte Vorbehalten",
       contactUs: "Kontaktieren Sie uns",
     },
+    portfolioSection: {
+      title_first: "Unsere Projekte &",
+      title_second: "Erfolge",
+      subtitle: "Entdecken Sie unsere neuesten Erfolge in der Technologie"
+    }
+    
   },
 };
 

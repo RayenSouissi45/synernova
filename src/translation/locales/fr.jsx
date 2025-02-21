@@ -215,6 +215,12 @@ const fr = {
       allRightsReserved: "Tous Droits Réservés",
       contactUs: "Contactez-nous",
     },
+    portfolioSection: {
+      title_first: "Nos Réalisations &",
+      title_second: "Succès",
+      subtitle: "Découvrez nos dernières réussites technologiques"
+    }
+    
   },
 };
 export default fr;

@@ -217,6 +217,11 @@ const en = {
       allRightsReserved: "All Rights Reserved",
       contactUs: "Contact Us",
     },
+    portfolioSection: {
+      title_first : "Our Work &",
+      title_second : "Achievements",
+      subtitle : "Discover Our Latest Triumphs in Tech"
+    }
   },
 };
 

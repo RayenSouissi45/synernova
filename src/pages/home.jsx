@@ -9,6 +9,7 @@ import HeroSection from "../components/sections/HeroSection";
 import FormSection from "../components/sections/FormSection";
 import FundamentalsSection from "../components/sections/FundamentalSection";
 import CompanySection from "../components/sections/CompanySection";
+import PortfolioSection from "../components/sections/PortfolioSection";
 
 const HomePage = () => {
   const { t } = useTranslation();
@@ -41,6 +42,8 @@ const HomePage = () => {
       <HeroSection scrollToForm={scrollToForm} />
       {/* -------------- ABOUT US SECTION ------------------ */}
       <AboutUsSection />
+       {/* -------------- Portfolio Section------------------ */}
+      <PortfolioSection/>
       {/* ---- Why choose us -----*/}
       <WhyChooseUsSection />
       {/* --------- OUR SERVICES --------- */}
