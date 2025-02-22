@@ -17,26 +17,46 @@ import BlueCircleIcon from "../../assets/icons/blueCircleIcon";
 import BlueCircleMidIcon from "../../assets/icons/blueCircleMidIcon";
 import BlueCircleLargeIcon from "../../assets/icons/blueCircleLargeIcon";
 
-
-
-
-
 const PortfolioSection = () => {
   const { t } = useTranslation();
   const theme = useTheme();
-    const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
-    const blueTextColor = "#38bdf8";
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
+  const blueTextColor = "#38bdf8";
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const [activeIndex, setActiveIndex] = useState(0);
 
-
   const portfolioItems = [
-    { id: 1, title: "Aggastore", image: aggastore, link : "https://aggastore.tn/" },
-    { id: 2, title: "Utopia Gammarth", image: utopia, link :"https://www.utopia-gammarth.com/" },
-    { id: 3, title: "Lingo Store", image: lingo, link : "https://lingo-store.com/" },
-    { id: 4, title: "Kokocan", image: kokocan , link :"https://koko-deco.com/" },
-    { id: 5, title: "Les Essentielles Lab", image: lessentielleslab, link :"https://lesessentielleslab.com.tn/" },
-    { id: 6, title: "Karaoke Box", image: karaoke , link : "https://karaokebox-gammarth.com/" },
+    {
+      id: 1,
+      title: "Aggastore",
+      image: aggastore,
+      link: "https://aggastore.tn/",
+    },
+    {
+      id: 2,
+      title: "Utopia Gammarth",
+      image: utopia,
+      link: "https://www.utopia-gammarth.com/",
+    },
+    {
+      id: 3,
+      title: "Lingo Store",
+      image: lingo,
+      link: "https://lingo-store.com/",
+    },
+    { id: 4, title: "Kokocan", image: kokocan, link: "https://koko-deco.com/" },
+    {
+      id: 5,
+      title: "Les Essentielles Lab",
+      image: lessentielleslab,
+      link: "https://lesessentielleslab.com.tn/",
+    },
+    {
+      id: 6,
+      title: "Karaoke Box",
+      image: karaoke,
+      link: "https://karaokebox-gammarth.com/",
+    },
   ];
 
   return (
@@ -46,61 +66,61 @@ const PortfolioSection = () => {
         textAlign: "center",
         width: "100%",
         position: "relative",
-        zIndex:10
+        zIndex: 10,
         // background: `linear-gradient(45deg, ${alpha("#E3F2FD", 0.9)} 30%, ${alpha("#BBDEFB", 0.9)} 90%)`
       }}
     >
-
-       <Box
-      sx={{
-        width: "100%",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        textAlign: "center",
-        // padding: isSmallScreen ? "2rem 1rem" : "4rem 2rem",
-      }}
-    >
+      <Box
+        sx={{
+          width: "100%",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          textAlign: "center",
+          // padding: isSmallScreen ? "2rem 1rem" : "4rem 2rem",
+        }}
+      >
         <Typography
-              variant="h4"
-              sx={{
-                fontWeight: "bold",
-                color: "#333",
-                fontFamily: "'Roboto', sans-serif",
-                marginBottom: theme.spacing(3),
-                 fontSize: isSmallScreen ? "2.5rem" : "3rem",
-                textAlign: "center",
-                zIndex:10
-
-              }}
-            >
-              {t("portfolioSection.title_first")}{" "}
-              <span style={{ color: blueTextColor }}>
-              {" "}{t("portfolioSection.title_second")}
-              </span>
-              
-            </Typography>
-             <Typography
-                        variant="h4"
-                        sx={{
-                          fontWeight: "bold",
-                          color: "#333",
-                          fontFamily: "'Roboto', sans-serif",
-                          fontSize: "2.1rem",
-                          marginBottom: theme.spacing(6),
-                          zIndex: 10,
-                        }}
-                      >{t("portfolioSection.subtitle")}{" "}!</Typography>
-    </Box>
+          variant="h4"
+          sx={{
+            fontWeight: "bold",
+            color: "#333",
+            fontFamily: "'Roboto', sans-serif",
+            marginBottom: theme.spacing(3),
+            fontSize: isSmallScreen ? "2.5rem" : "3rem",
+            textAlign: "center",
+            zIndex: 10,
+          }}
+        >
+          {t("portfolioSection.title_first")}{" "}
+          <span style={{ color: blueTextColor }}>
+            {" "}
+            {t("portfolioSection.title_second")}
+          </span>
+        </Typography>
+        <Typography
+          variant="h4"
+          sx={{
+            fontWeight: "bold",
+            color: "#333",
+            fontFamily: "'Roboto', sans-serif",
+            fontSize: "2.1rem",
+            marginBottom: theme.spacing(6),
+            zIndex: 10,
+          }}
+        >
+          {t("portfolioSection.subtitle")} !
+        </Typography>
+      </Box>
 
       <Box sx={{ maxWidth: 1500, margin: "0 auto", position: "relative" }}>
         <Swiper
           modules={[Autoplay, Navigation, EffectCoverflow]}
           effect="coverflow"
           grabCursor={true}
-          slidesPerView={isMobile ? 1.5 : 2.5} // Increase slidesPerView to expand width
+          slidesPerView={isMobile ? 1 : 2.5} // Force 1 slide per view on mobile
           centeredSlides={true}
-          spaceBetween={50} // Increase space between slides
+          spaceBetween={isMobile ? 10 : 50} // Reduce space between slides on mobile
           loop={true}
           autoplay={{ delay: 4000, disableOnInteraction: false }}
           navigation={{
@@ -117,6 +137,10 @@ const PortfolioSection = () => {
           speed={1000}
           onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
           breakpoints={{
+            480: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
             640: {
               slidesPerView: 2,
               spaceBetween: 20,
@@ -125,6 +149,11 @@ const PortfolioSection = () => {
               slidesPerView: 3,
               spaceBetween: 30,
             },
+          }}
+          style={{
+            width: "100%", // Ensure Swiper does not exceed the container width
+            maxWidth: "100vw", // Prevent Swiper from overflowing
+            overflow: "hidden", // Hide any extra cont ent
           }}
         >
           {portfolioItems.map((item, index) => (
@@ -158,24 +187,24 @@ const PortfolioSection = () => {
                 }}
               />
               {index === activeIndex && (
-          <Typography
-          sx={{
-            position: "absolute",
-            bottom: 40,
-            left: "50%",
-            transform: "translateX(-50%)",
-            fontWeight: 700,
-            fontSize: isMobile ? "1.2rem" : "1.8rem",
-            color: "#fff",
-            zIndex: 2,
-            textAlign: "center",
-            width: "90%",
-            textShadow: "0 2px 4px rgba(0,0,0,0.5)",
-            cursor: "pointer",
-          }}
-          onClick={() => window.open(item.link, "_blank")}
-        >
-      {item.title}
+                <Typography
+                  sx={{
+                    position: "absolute",
+                    bottom: 40,
+                    left: "50%",
+                    transform: "translateX(-50%)",
+                    fontWeight: 700,
+                    fontSize: isMobile ? "1.2rem" : "1.8rem",
+                    color: "#fff",
+                    zIndex: 2,
+                    textAlign: "center",
+                    width: "90%",
+                    textShadow: "0 2px 4px rgba(0,0,0,0.5)",
+                    cursor: "pointer",
+                  }}
+                  onClick={() => window.open(item.link, "_blank")}
+                >
+                  {item.title}
                   <Box
                     sx={{
                       width: "60%",

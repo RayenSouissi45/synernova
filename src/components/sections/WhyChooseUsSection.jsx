@@ -27,6 +27,7 @@ const WhyChooseUsSection = () => {
         margin: "0 auto", // Center the section horizontally
         paddingX: isSmallScreen ? null : "5%",
         position: "relative",
+        
       }}
     >
       <Box
