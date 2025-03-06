@@ -98,7 +98,7 @@ const FooterSection = () => {
             >
               <Box display="flex" alignItems="center" gap="0.5rem">
                 <Email fontSize="small" /> {/* Email icon */}
-                <Typography variant="body1">synernova@gmail.com</Typography>
+                <Typography variant="body1">contact@synernova.net</Typography>
               </Box>
               <Box display="flex" alignItems="center" gap="0.5rem">
                 <Phone fontSize="small" /> {/* Phone icon */}
